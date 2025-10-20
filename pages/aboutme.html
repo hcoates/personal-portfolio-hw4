@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="About Me page for Hannah's Personal Portfolio" />
+	<meta name="keywords" content="HTML, CSS, JavaScript" />
+	<meta name="author" content="Hannah Coates" />
+	<title>Hannah's Personal Portfolio Website - About Me</title>
+	<link href="../assets/favicon.ico" rel="icon" />
+</head>
+
+<body>
+	<header>
+        <h1>About Me</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="aboutme.html">About Me</a>
+                </li>
+                <li>
+                    <a href="experiences.html">Experiences</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+         <picture>
+            <source srcset="../assets/hannah.avif" type="image/avif">
+            <source srcset="../assets/hannah.webp" type="image/webp">
+            <img src="..assets/hannah.jpg" alt="Picture of Hannah" width="10%">
+         </picture>
+        <h2>Summary</h2>
+        <p>I'm a 4th year UCSD Computer Science student graduating in June of 2026. I have experience working with Java, C, and Python and have participated in hackathons such as the LA Hacks and TritonHacks. I plan to graduate from UCSD with a BS in computer science and attain a job as a software engineer after graduation.</p>
+
+        <br>
+
+        <h2>Goals</h2>
+        <ul>
+            <li>Work in Software Development</li>
+            <li>Graduate with a MS in Computer Science</li>
+        </ul>
+
+        <br>
+
+        <section id="skills">
+            <h2>Skills</h2>
+
+            <label for="java-skill">Java</label>
+            <progress id="java-skill" value="90" max="100">90%</progress>
+
+            <label for="c-skill">C</label>
+            <progress id="c-skill" value="85" max="100">80%</progress>
+
+            <label for="python-skill">Python</label>
+            <progress id="python-skill" value="60" max="100">60%</progress>
+        </section>
+
+        <br>
+
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Crochet</li>
+            <li>Hiking</li>
+            <li>Knitting</li>
+        </ul>
+
+    </main>
+
+    <footer>
+		<hr/>
+		<p>This page was made with &hearts; by Hannah Coates</p>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Experiences page for Hannah's Personal Portfolio" />
+	<meta name="keywords" content="HTML, CSS, JavaScript" />
+	<meta name="author" content="Hannah Coates" />
+	<title>Hannah's Personal Portfolio Website - Experiences</title>
+	<link href="../assets/favicon.ico" rel="icon" />
+    <style>
+        experience-card {
+            display: block;
+            width: 90%;
+            border: 2px solid #0e0c0c;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 10px;
+            background-color: #f9f9f9; 
+        }
+    </style>
+     <script>
+        // Placeholder for script 
+    </script>
+</head>
+
+<body>
+	<header>
+        <h1>Experiences</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="aboutme.html">About Me</a>
+                </li>
+                <li>
+                    <a href="experiences.html">Experiences</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article id="other-experience">
+            <h2><a href="education.html">Education</a></h2>
+
+            <h2><a href="extracurriculars.html">Extracurriculars</a></h2>
+        </article>
+
+        <article id="work-experience">
+            <h2>Work Experience</h2>
+
+            <experience-card>
+                <h3>Amazon Co.</h3> 
+                <p>
+                    <i>Seattle, WA</i> · Jun 2025 - Sep 2025<br>
+                    <em>Software Development Engineer Intern</em>
+                </p>
+
+                <ul>
+                    <li>Developed a full-stack payment registration feature reducing payment registration from multi-page to single-page, cutting API calls by <b>50%</b> and improving performance.</li>
+                    <li>Built responsive <span class="skill">TypeScript</span>/<span class="skill">React</span> components with billing address selection and pre-population logic, supporting both desktop and mobile user experiences.</li>
+                    <li>Implemented secure backend services integrating with <span class="skill">Address APIs</span>, ensuring <strong>confidentiality</strong> and data protection.</li>
+                    <li>Delivered production-ready feature in <b>12 weeks</b> with <span class="skill">A/B Testing</span>, deployed to Amazon's European marketplace.</li>
+                </ul>
+            </experience-card>
+
+            <experience-card>
+                <h3>Palomar Insurance</h3>
+                <p>
+                    <i>La Jolla, CA</i><br>
+                    <em>Chatbot Administrator</em> · Aug 2023 - Dec 2023<br>
+                    <em>Technology Operations Intern</em> · Jun 2023 - Aug 2023
+                </p>
+
+                <ul>
+                    <li>Developed and deployed a <strong>chatbot</strong> for internal company use and integration with <span class="skill">Microsoft Teams</span>, enhancing workflow using <span class="skill">Azure OpenAI GPT-4</span> on company-specific data.</li>
+                    <li>Integrated <span class="skill">Service Desk Plus API</span> into MS Teams, allowing users to seamlessly search and create support requests.</li>
+                    <li>Led cross-functional meetings and presented project updates, showcasing the impact of using the <span class="skill">OpenAI API</span> to streamline access to information.</li>
+                    <li>Created <strong>system admin documentation</strong> and user guides ensuring knowledge transfer and project scalability.</li>
+                </ul>
+            </experience-card>
+
+            <experience-card>
+                <h3>Lightedge Solutions</h3> 
+                <p>
+                    <i>San Diego, CA</i> · Jul 2022 - Dec 2022<br>
+                    <em>Network Operations Intern</em>
+                </p>
+
+                <ul>
+                    <li>Conducted independent research on <strong>network monitoring tools</strong> for datacenter operations.</li>
+                    <li>Selected, implemented, and deployed pilot applications: <span class="skill">SmokePing</span> and <span class="skill">Datadog</span>, analyzing pros and cons to guide full-scale deployment decisions.</li>
+                </ul>
+            </experience-card>
+        </article>
+            
+    </main>
+
+    <footer>
+		<hr/>
+		<p>This page was made with &hearts; by Hannah Coates</p>
+	</footer>
+
+    <noscript>
+        <p>Note: Some features may be unavailable with JavaScript disabled.</p>
+    </noscript>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Portfolio Site for showcase Hannah's experiences" />
+	<meta name="keywords" content="HTML, CSS, JavaScript" />
+	<meta name="author" content="Hannah Coates" />
+	<title>Hannah's Personal Portfolio Website</title>
+	<link href="./assets/favicon.ico" rel="icon" />
+	<style>
+        body {
+            border: 3px solid black; 
+        }
+
+        main {
+            margin: 10px;
+        }
+    </style>
+    <script>
+        // Define a new custom element called <hello-world>
+        class HelloWorld extends HTMLElement {
+            constructor() {
+            super();
+            // When the element is created, log a message to the console
+            console.log("Hello world!");
+            }
+        }
+
+        // Register the custom element
+        customElements.define('hello-world', HelloWorld);
+    </script>
+</head>
+
+<body>
+	<header>
+        <h1>Hannah Coates' Portfolio</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="pages/aboutme.html">About Me</a>
+                </li>
+                <li>
+                    <a href="pages/experiences.html">Experiences</a>
+                </li>
+                <li>
+                    <a href="pages/contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <dialog open>
+            <p>Thanks for visiting my portfolio!</p>
+            <button>Close</button>
+        </dialog>
+        <h2>Hannah Coates</h2>
+        <p>Hello! My name is Hannah and I am a 4th year computer science major at the Univeristy of California San Diego! 
+            Welcome to my portfolio site!</p>
+    </main>
+
+    <footer>
+		<hr/>
+		<p>This page was made with &hearts; by Hannah Coates</p>
+	</footer>
+
+    <hello-world></hello-world>
+</body>
+
+</html>
