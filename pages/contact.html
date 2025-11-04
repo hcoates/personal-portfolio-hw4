@@ -8,7 +8,6 @@
 	<meta name="author" content="Hannah Coates" />
 	<title>Hannah's Personal Portfolio Website - Contact</title>
 	<link href="../assets/favicon.ico" rel="icon" />
-    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet">
     <link href="../style.css" rel="stylesheet">
 </head>
 
@@ -34,25 +33,29 @@
     </header>
 
     <main>
-        <form>
-            <fieldset>
-                <legend>Contact Inforamtion</legend>
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" placeholder="Jane Doe"><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" placeholder="janedoe@abc.com"><br>
-            </fieldset>
-            
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" placeholder="Hi there!" rows=3 cols=20></textarea>
-            <br><br>
-            <input type="submit" value="Submit">
-        </form>
+        <section class="contact-container">
+            <h2>Get in Touch</h2>
+            <form class="contact-form">
+                <fieldset>
+                    <legend>Contact Information</legend>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Jane Doe">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="janedoe@abc.com">
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Hi there!" rows="5"></textarea>
+
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
     </main>
 
     <footer>
-		<hr/>
-		<p>This page was made with &hearts; by Hannah Coates</p>
+		<p>This page was made by Hannah Coates</p>
 	</footer>
 </body>
 
