@@ -337,3 +337,36 @@ info-card ul {
     background-color: var(--accent-2);
     transform: translateY(-2px) scale(1.02);
 }
+
+/* === Experience === */
+.experience-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.exp-link {
+    display: inline-block;
+    background-color: var(--card-bg);
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border-radius: var(--card-radius);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.exp-link:hover { transform: translateY(-3px) scale(1.05); box-shadow: 0 6px 15px rgba(0,0,0,0.2); }
+
+#swe-image { 
+  display: block; 
+  margin: 0 auto; 
+  width: 60%; 
+  height: auto; 
+  border-radius: 10px; 
+}
