@@ -98,3 +98,14 @@ header nav a:hover {
     transform: translateY(-2px) scale(1.02);
 }
 
+/* === Main Content === */
+main {
+    max-width: 100%;
+    padding: 0 1rem;
+    margin: auto;
+}
+
+main p,
+main ul {
+    font-family: 'Roboto', sans-serif;
+}
