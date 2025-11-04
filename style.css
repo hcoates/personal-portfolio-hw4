@@ -157,3 +157,39 @@ section ul li {
     align-items: center;
     gap: 0.5rem;
 }
+
+/* === Dialog === */ 
+dialog button { 
+  margin-top: 0.5rem; 
+  border: none; 
+  background-color: var(--text); 
+  color: var(--bg); 
+  font-family: "Press Start 2P", cursive; 
+  font-size: 0.5rem; 
+  padding: 0.4rem 0.8rem; 
+  cursor: pointer; 
+  border-radius: var(--card-radius, 5px); 
+} 
+
+dialog button:hover { 
+  background-color: var(--accent); 
+} 
+
+dialog { 
+  text-align: center; 
+  border-radius: var(--card-radius, 5px); 
+} 
+
+dialog p { 
+  font-family: "Press Start 2P", cursive; 
+} 
+
+dialog[open] { 
+  animation: fadeInDialog 0.4s ease forwards; 
+}
+
+/* Fade-in animation for dialog */ 
+@keyframes fadeInDialog { 
+  from { opacity: 0; transform: scale(0.95); } 
+  to { opacity: 1; transform: scale(1); } 
+}
