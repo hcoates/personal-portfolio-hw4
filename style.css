@@ -1,24 +1,48 @@
 @charset "utf-8";
+
+/* === Root Variables === */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 :root {
-  --bg: #ffffff;
-  --text: #212529;
+    color-scheme: light dark;
+
+    --accent: color(display-p3 1 0.36 0.36);
+    --accent-2: color(display-p3 1 0.72 0.64);
+    --bg: light-dark(
+        color-mix(in srgb, white 90%, color(display-p3 0.97 0.97 0.98)),
+        color-mix(in srgb, black 90%, color(display-p3 0.1 0.1 0.1))
+    );
+    --text: light-dark(
+        color(display-p3 0.12 0.14 0.15),
+        color(display-p3 0.94 0.94 0.94)
+    );
+    --card-bg: light-dark(
+        color-mix(in srgb, white 95%, var(--accent) 5%),
+        color-mix(in srgb, rgb(45, 39, 39) 80%, var(--accent-2) 20%)
+    );
+    --header-height: 8.5rem;
+    --page-gutter: 2rem;
+    --card-radius: 0.5rem;
+    --card-shadow: 0 8px 18px light-dark(
+        color-mix(in srgb, rgba(0,0,0,0.6) 80%, var(--accent) 20%),
+        color-mix(in srgb, rgba(231,231,231,0.6) 80%, var(--accent-2) 20%)
+    );
+    --ui-speed: 240ms;
 }
 
-/* === Base === */
 html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background: var(--bg, #fff);     /* fallback to #fff */
-  color: var(--text, #212529);
-  font-family: 'Press Start 2P', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;                 /* 1rem = 16px baseline */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Press Start 2P', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
 }
 
 body {
-  display: grid;
-  grid-template-rows: auto 1fr auto; /* header / main / footer */
-  min-height: 100dvh;                /* use dynamic viewport unit for full height in mobile */
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100dvh;
 }
