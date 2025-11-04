@@ -8,7 +8,6 @@
 	<meta name="author" content="Hannah Coates" />
 	<title>Hannah's Personal Portfolio Website - About Me</title>
 	<link href="../assets/favicon.ico" rel="icon" />
-    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet">
     <link href="../style.css" rel="stylesheet">
 </head>
 
@@ -33,22 +32,31 @@
         </nav>
     </header>
 
-    <main>
-         <picture>
-            <source srcset="../assets/hannah.avif" type="image/avif">
-            <source srcset="../assets/hannah.webp" type="image/webp">
-            <img src="..assets/hannah.jpg" alt="Picture of Hannah" width="150">
-         </picture>
-        <h2>Summary</h2>
-        <p>I'm a 4th year UCSD Computer Science student graduating in June of 2026. I have experience working with Java, C, and Python and have participated in hackathons such as the LA Hacks and TritonHacks. I plan to graduate from UCSD with a BS in computer science and attain a job as a software engineer after graduation.</p>
+    <main>   
+        <section id="summary">
+            <div class="summary-container">
+                <picture class="summary-image">
+                    <source srcset="../assets/hannah2.avif" type="image/avif">
+                    <source srcset="../assets/hannah2.webp" type="image/webp">
+                    <img src="../assets/hannah2.jpg" alt="Headshot of Hannah">
+                </picture>
+
+                <div class="summary-text">
+                    <h2>Summary</h2>
+                    <p>I'm a 4th year UCSD Computer Science student graduating in June of 2026. I have experience working with Java, C, and Python and have participated in hackathons such as the LA Hacks and TritonHacks. I plan to graduate from UCSD with a BS in computer science and attain a job as a software engineer after graduation.</p>
+                </div>
+            </div>
+        </section>
 
         <br>
 
-        <h2>Goals</h2>
-        <ul>
-            <li>Work in Software Development</li>
-            <li>Graduate with a MS in Computer Science</li>
-        </ul>
+        <section id="goals">
+            <h2>Goals</h2>
+            <ul>
+                <li>Work in Software Development</li>
+                <li>Graduate with a MS in Computer Science</li>
+            </ul>
+        </section>
 
         <br>
 
@@ -67,29 +75,29 @@
 
         <br>
 
-        <h2>Hobbies</h2>
-        <ul>
-            <li>Crochet</li>
-            <li>Hiking 
-                <br>
-                <svg width="10%"  viewBox="0 0 235 168" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M80.5404 0L161.081 168H0L80.5404 0Z" fill="#D9D9D9"/>
-                    <path d="M80.5404 0L161.081 168H0L80.5404 0Z" fill="#D9D9D9"/>
-                    <path d="M160.287 167.5H0.793289L80.5404 1.15625L160.287 167.5Z" fill="#57565C" stroke="#3C3C3C" stroke-width="3px"/>
-                    <path d="M233.686 167.5H80.3949L157.04 34.0039L233.686 167.5Z" fill="#57565C" stroke="#3C3C3C" stroke-width="3px"/>
-                    <path d="M157.54 33L181.789 76.5H133.292L157.54 33Z" fill="white"/>
-                    <path d="M157.54 33L181.789 76.5H133.292L157.54 33Z" fill="white"/>
-                    <path d="M80.5404 0L107.387 57.75H53.6936L80.5404 0Z" fill="white"/>
-                </svg>
-            </li>
-            <li>Knitting</li>
-        </ul>
-
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+                <ul>
+                    <li>Crochet</li>
+                    <li>Hiking 
+                        <br>
+                        <svg width="100px"  viewBox="0 0 235 168" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M80.5404 0L161.081 168H0L80.5404 0Z" fill="#D9D9D9"/>
+                            <path d="M80.5404 0L161.081 168H0L80.5404 0Z" fill="#D9D9D9"/>
+                            <path d="M160.287 167.5H0.793289L80.5404 1.15625L160.287 167.5Z" fill="#57565C" stroke="#3C3C3C" stroke-width="3px"/>
+                            <path d="M233.686 167.5H80.3949L157.04 34.0039L233.686 167.5Z" fill="#57565C" stroke="#3C3C3C" stroke-width="3px"/>
+                            <path d="M157.54 33L181.789 76.5H133.292L157.54 33Z" fill="white"/>
+                            <path d="M157.54 33L181.789 76.5H133.292L157.54 33Z" fill="white"/>
+                            <path d="M80.5404 0L107.387 57.75H53.6936L80.5404 0Z" fill="white"/>
+                        </svg>
+                    </li>
+                    <li>Knitting</li>
+                </ul>
+        </section>
     </main>
 
     <footer>
-		<hr/>
-		<p>This page was made with &hearts; by Hannah Coates</p>
+		<p>This page was made by Hannah Coates</p>
 	</footer>
 </body>
 
