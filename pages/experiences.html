@@ -8,20 +8,8 @@
 	<meta name="author" content="Hannah Coates" />
 	<title>Hannah's Personal Portfolio Website - Experiences</title>
 	<link href="../assets/favicon.ico" rel="icon" />
-    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet">
     <link href="../style.css" rel="stylesheet">
-    <style>
-        experience-card {
-            display: block;
-            width: 90%;
-            border: 2px solid #0e0c0c;
-            border-radius: 8px;
-            margin: 10px;
-            padding: 10px;
-            background-color: #f9f9f9; 
-        }
-    </style>
-     <script>
+    <script>
         // Placeholder for script 
     </script>
 </head>
@@ -49,18 +37,28 @@
 
     <main>
         <article id="other-experience">
-            <h2><a href="education.html">Education</a></h2>
-
-            <h2><a href="extracurriculars.html">Extracurriculars</a></h2>
+            <div class="experience-links">
+                <a href="education.html" class="exp-link">Education</a>
+                <a href="extracurriculars.html" class="exp-link">Extracurriculars</a>
+            </div>
         </article>
+
 
         <br>
 
         <article id="work-experience">
             <h2>Work Experience</h2>
 
-            <experience-card>
-                <h3>Amazon Co.</h3> 
+            <info-card>
+                <div class="card-header">
+                    <picture>
+                        <source srcset="../assets/amazon-logo.png" type="image/avif">
+                        <source srcset="./assets/amazon-logo.webp" type="image/webp">
+                        <img src="../assets/amazon-logo.png" alt="Image of amazon logo, amazon text with a smile" width="60%">
+                    </picture>
+                    <br>
+                    <h3>Amazon Co.</h3> 
+                </div>
                 <p>
                     <i>Seattle, WA</i> · Jun 2025 - Sep 2025<br>
                     <em>Software Development Engineer Intern</em>
@@ -72,10 +70,19 @@
                     <li>Implemented secure backend services integrating with <span class="skill">Address APIs</span>, ensuring <strong>confidentiality</strong> and data protection.</li>
                     <li>Delivered production-ready feature in <b>12 weeks</b> with <span class="skill">A/B Testing</span>, deployed to Amazon's European marketplace.</li>
                 </ul>
-            </experience-card>
+            </info-card>
 
-            <experience-card>
-                <h3>Palomar Insurance</h3>
+            <info-card>
+                <div class="card-header">
+                    <picture>
+                        <source srcset="../assets/plmr-logo.png" type="image/avif">
+                        <source srcset="./assets/plmr-logo.webp" type="image/webp">
+                        <img src="../assets/plmr-logo.png" alt="Image of palomar insurance logo, a mountain with palomar text" width="60%">
+                    </picture>
+                    <br>
+                    <h3>Palomar Insurance</h3>
+                </div>
+                
                 <p>
                     <i>La Jolla, CA</i><br>
                     <em>Chatbot Administrator</em> · Aug 2023 - Dec 2023<br>
@@ -88,10 +95,18 @@
                     <li>Led cross-functional meetings and presented project updates, showcasing the impact of using the <span class="skill">OpenAI API</span> to streamline access to information.</li>
                     <li>Created <strong>system admin documentation</strong> and user guides ensuring knowledge transfer and project scalability.</li>
                 </ul>
-            </experience-card>
+            </info-card>
 
-            <experience-card>
-                <h3>Lightedge Solutions</h3> 
+            <info-card>
+                <div class="card-header">
+                    <picture>
+                        <source srcset="../assets/lightedge-logo.png" type="image/avif">
+                        <source srcset="./assets/lightedge-logo.webp" type="image/webp">
+                        <img src="../assets/lightedge-logo.png" alt="Image of lightedge logo, a lightedge text with a circle with streaks near it" width="60%">
+                    </picture>
+                    <br>
+                    <h3>Lightedge Solutions</h3> 
+                </div>
                 <p>
                     <i>San Diego, CA</i> · Jul 2022 - Dec 2022<br>
                     <em>Network Operations Intern</em>
@@ -101,14 +116,13 @@
                     <li>Conducted independent research on <strong>network monitoring tools</strong> for datacenter operations.</li>
                     <li>Selected, implemented, and deployed pilot applications: <span class="skill">SmokePing</span> and <span class="skill">Datadog</span>, analyzing pros and cons to guide full-scale deployment decisions.</li>
                 </ul>
-            </experience-card>
+            </info-card>
         </article>
             
     </main>
 
     <footer>
-		<hr/>
-		<p>This page was made with &hearts; by Hannah Coates</p>
+		<p>This page was made by Hannah Coates</p>
 	</footer>
 
     <noscript>
