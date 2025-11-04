@@ -109,3 +109,31 @@ main p,
 main ul {
     font-family: 'Roboto', sans-serif;
 }
+
+section {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: var(--card-bg);
+    border-radius: var(--card-radius);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--accent-2);
+    padding-bottom: 0.5rem;
+}
+
+section ul {
+    padding-left: 1.5rem;
+}
+
+section ul li {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
