@@ -34,19 +34,31 @@
     </header>
 
     <main id="home-page">
-        <dialog open>
+        <dialog id="popUp" open>
             <p>Thanks for visiting my portfolio!</p>
-            <button>Close</button>
+            <button id="popUpBtn">Close</button>
         </dialog>
         <h2>Hannah Coates</h2>
-        <p>Hello! My name is Hannah and I am a 4th year computer science major at the Univeristy of California San Diego! 
+        <p>Hello! My name is Hannah and I am a 4th year computer science major at the University of California - San Diego! 
             <br>
             Welcome to my portfolio site!</p>
     </main>
 
     <footer>
 		<p>This page was made by Hannah Coates</p>
+        <button id="theme-toggle">Toggle Theme</button>
 	</footer>
+
+    <script>
+        const dialog = document.getElementById("popUp");
+        const dialogBtn = document.getElementById("popUpBtn");
+
+        dialogBtn.addEventListener("click", () => {
+            dialog.close();
+        });
+    </script>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
