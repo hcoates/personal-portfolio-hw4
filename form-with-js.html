@@ -18,8 +18,6 @@
     </header>
 
     <main>
-        <button id="theme-toggle">Toggle Theme</button>
-
         <section class="contact-container">
 
             <h2>Get in Touch</h2>
@@ -71,7 +69,6 @@
             const hiddenErrorsField = document.getElementById("form-errors");
             const form_errors = [];
 
-            // regex for name and email
             const namePattern = /^[A-Za-z\s'-]+$/;
             const emailPattern = /^[A-Za-z0-9@._-]+$/;
 
@@ -109,7 +106,7 @@
             illegalCharCheck(nameInput, namePattern, "Name", nameInput);
             illegalCharCheck(emailInput, emailPattern, "Email", emailInput);
 
-            // ---- Character countdown for textarea ----
+            //char countdown
             const MAX = 500;
 
             messageArea.addEventListener("input", () => {
@@ -151,19 +148,17 @@
                 }
             });
 
-            // ---- Form submission handler ----
+            //check form submission
             const submitBtn = document.querySelector('button[type="submit"]');
 
             submitBtn.addEventListener("click", (e) => {
                 errorOutput.textContent = "";
                 infoOutput.textContent = "";
 
-                // ---> Force custom validators to run before checkValidity()
                 nameInput.dispatchEvent(new Event("blur"));
                 emailInput.dispatchEvent(new Event("blur"));
                 messageArea.dispatchEvent(new Event("blur"));
 
-                // ---> If invalid form: prevent submit + record errors
                 if (!form.checkValidity()) {
                     e.preventDefault();
 
@@ -198,7 +193,7 @@
                     return;
                 }
 
-                // ---> Valid form: Submit previous errors
+                // submit form with prev errors
                 hiddenErrorsField.value = JSON.stringify(form_errors);
                 
 
